@@ -4,9 +4,41 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="lightning.png">
+    
     <title>Password Generator</title>
 </head>
 <body>
-    
+    <main>
+        <div class="thebox">
+            <div class="hero">
+                <p class="herotext">Generate a <br> <span class="green-text"> random password</span></p>
+                <p class="hint">Never use an insecure password again.</p>
+            </div>
+
+            <div class="spec">
+                <button class="generate-btn" onclick="fillButtons();">
+                    <img class= "static" src="lightning.png" alt="static"> Generate passwords
+                </button>
+
+                <label class="pw-label" for="pw-len">Password length: </label>
+                <input type="number" id="pw-len" class="pwdlen" value="12">
+            </div>
+
+            
+            <hr>
+
+            <div class="pwd-area">
+                <button  class="pwd-btn" id="pw1" onclick="copyPassword1();">...</button>
+                <button  class="pwd-btn" id="pw2" onclick="copyPassword2();">...</button>
+                <button  class="pwd-btn" id="pw3" onclick="copyPassword3();">...</button>
+                <button  class="pwd-btn" id="pw4" onclick="copyPassword4();">...</button>
+            </div>
+
+        </div>
+    </main>
 </body>
+<script src="index.js"></script>
 </html>
+
